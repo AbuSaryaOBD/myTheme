@@ -64,7 +64,7 @@
 
         <!-- HERO 
         =====================================================-->
-        <section id="hero">
+        <section id="hero" data-type="background" data-speed="5">
             <article>
                 <div class="container clearfix">
                    <div class="row">
@@ -100,14 +100,38 @@
 
         <!-- OPT IN SECTION
         ====================================================== -->
-        <section>
-
+        <section id="optin">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="lead">
+                            <strong>Subscribe to our mailing list.</strong>
+                            We'll send somethings special as a thank you.
+                        </p>
+                    </div>
+                        <!-- col-sm-8 -->
+                    <div class="col-sm-4">
+                        <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+                            Click Here to subscribe
+                        </button>
+                    </div>
+                        <!-- col-sm-4 -->
+                </div>
+                    <!-- row -->
+            </div>
+                <!-- container -->
         </section>
 
         <!-- BOOST YOUR INCOME
         ====================================================== -->
-        <section>
-
+        <section id="boost-income">
+            <div class="container">
+                <div class="section-header">
+                    <img src="assets/img/icon-boost.png" alt="">
+                </div>
+                    <!-- section-header -->
+            </div>
+                <!-- container -->
         </section>
 
         <!-- WHO BENEFITS
@@ -160,9 +184,48 @@
 
         <!-- MODAL
         ====================================================== -->
-        <div>
-            
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLable">
+                            <i class="fa fa-envelope"></i> Subscribe to our mailing list.
+                        </h4>
+                    </div>
+                        <!-- modal-header -->
+                    <div class="modal-body">
+                        <p class="modal-body">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolorum ab. Quasi quidem eius commodi doloremque<em>for free!</em>
+                        </p>
+                        <form role="form" class="form-inline">
+                            <div class="form-group">
+                                <label for="subscribe-name" class="sr-only">Your first name : </label>
+                                <input type="text" class="form-control" id="subscribe-name" placeholder="First name">
+                            </div>
+                                <!-- form-group -->
+                            <div class="form-group">
+                                    <label for="subscribe-email" class="sr-only">Your email : </label>
+                                    <input type="email" class="form-control" id="subscribe-email" placeholder="Your email">
+                            </div>
+                                <!-- form-group -->
+                            <input type="submit" class="btn btn-danger" value="Subscribe!">
+                        </form>
+                        <hr>
+                        <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit vero tempore quisquam optio animi numquam ab, &amp;
+                             distinctio cupiditate ex, nesciunt, <br>labore magnam minima. Repellendus molestiae &amp; architecto reprehenderit blanditiis sed?</small></p>
+                        
+                    </div>
+                        <!-- modal-body -->
+                </div>
+                    <!-- modal-content -->
+            </div>
+                <!-- modal-dialog -->
         </div>
+            <!-- modal -->
 
         <!-- BOOTSTRAP CORE JAVASCRIPT
         ====================================================== -->
@@ -170,6 +233,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
 
         <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
 
     </body>

@@ -1,6 +1,6 @@
 /*COLOUR REFERENCES
 Green:      #79b044
-Salmon:     #dd5638
+Salmon:     #df5838
 Blue Gray:  #3e4249
 
 */
@@ -35,14 +35,39 @@ h3{
 h4{
     font-size: 18px;
 }
-/*=== HERO =====*/
+
+button, input, .btn, a.btn {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: white;
+}
+
+.btn {
+    font-weight: bold;
+}
+.btn-danger {
+    background-color: #df5838;
+    border-color: #d95131;
+}
+
+img{
+    max-width: 100% ;
+}
+
+/*==============================================================*/
+/*============================ HERO ============================*/
 #hero{
     background: url('../img/hero-bg.jpg')50% 0px repeat fixed;
     min-height: 600px;
     padding: 40px;
-    color: white;
+    color: aliceblue;
     -webkit-font-somoothing: antialiased;
     text-rendering: optimizeLegibility;
+}
+
+#hero article {
+    widows: 100%;
+    text-align: center;
 }
 
 #hero .hero-text{
@@ -65,7 +90,7 @@ h4{
 }
 
 #price-timeline .price.active{
-    background: #101010; 
+    background: #df5838; 
 
 }
 
@@ -79,6 +104,44 @@ h4{
     font-weight: bold;
     font-size: 24px;
     border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    margin-left: -35px;
+}
+
+#price-timeline h4 {
+    margin: 0 0 10px;
+}
+
+#price-timeline h4 small {
+    color: aliceblue;
+    font-weight: bold;
+    display: block;
+}
+
+/*============================ HERO ============================*/
+/*==============================================================*/
+
+
+/*==============================================================*/
+/*=========================== LAYOUT ===========================*/
+
+#optin{
+    background: #3e4249;
+    padding: 20px;
+    color: white;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    font-size: 1.2em;
 }
+
+#optin p{
+    margin: 7px 0 0 0;
+}
+
+
+/*=========================== LAYOUT ===========================*/
+/*==============================================================*/
